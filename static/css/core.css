@@ -1,0 +1,963 @@
+/* @override
+	http://10.0.1.20/styles/core.css
+	http://www.rkalk.com/1/2/3/sandbox/styles/core.css
+	http://www.rkalk.com/styles/core.css
+	http://10.0.1.20:8000/static/css/core.css
+*/
+
+/* Remove Default margins, etc.*/
+* {
+	margin: 0;
+	padding: 0;
+	border: 0px solid black;
+}
+/*Color ***********************/
+body {
+	background-color: #303;
+}
+#container {
+	background-color: #eee;
+}
+#branding h2 {
+	color: #eee;
+}
+
+p {
+	color: #333;
+}
+#main_nav li a {
+	color: #333;
+}
+/* @group submenu */
+
+#submenu ul li a {
+	color: #333;
+}
+#submenu ul li a .fn {
+	color: #515;
+}
+#submenu ul li.active a {
+	background: url("../images/pink.png") repeat;
+}
+#submenu ul li a:hover,
+#submenu ul li a:active {
+	/*background-color: rgba(0,0,0,.1);*/
+	background: url("../images/grey.png") repeat;
+	/*margin-left: 0;
+	margin-right: 0;
+	padding-left: 15px;
+	padding-right: 15px;*/
+}
+
+
+
+/* @end */
+/* @group main_content */
+
+#main_content {
+	background-color: #eee;
+}
+#main_content h2 {
+	color: #303;
+}
+a:link,
+a:visited {
+	color: #298684;
+}
+a:hover,
+a:active {
+	color: #333;
+}
+/* @end */
+
+/* @group footer */
+
+#footer h2 {
+	color: #7ed4d2;
+}
+
+#footer p {
+	color: #eee;
+}
+
+#footer a:link,
+#footer a:visited {
+	color: #7ed4d2;
+}
+
+#footer a:hover,
+#footer a:active {
+	color: #eee;
+}
+
+
+
+/* @end */
+/*Typography ******************/
+
+#branding h1 {
+	font-size: 1px;
+}
+
+body {
+	font: 62.5% "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+h2 {
+	font-size: 3em;
+}
+#branding h2 {
+	font-size: 2em;
+}
+p {
+	font-size: small;
+}
+#main_nav li a {
+	text-decoration: none;
+	font-size: 1.4em;
+}
+#submenu ul li a .fn {
+	font-size: .83em;
+	font-weight: normal;
+}
+#submenu ul li a:hover,
+#submenu ul li a:active {
+	text-decoration: none;
+}
+#backstory p {
+	font-size: 1.9em;
+}
+/* @group main_content */
+
+a:link,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover,
+a:active {
+	text-decoration: underline;
+}
+/* @end */
+
+/* @group footer */
+
+#footer h2 {
+	font-size: 2em;
+}
+
+#footer a:link,
+#footer a:visited {
+	text-decoration: none;
+}
+
+#footer a:hover,
+#footer a:active {
+	text-decoration: underline;
+}
+/* @end */
+/*Layout **********************/
+
+.wrap_content {
+	position: relative;
+	width: 780px;
+	left: 50%;
+	margin-left: -390px;
+	float: left;
+	clear: both;
+}
+
+.clear {
+	clear: both;
+}
+
+#container {
+	position: relative;
+	width: 100%;
+	float: left;
+
+}
+#blog_page #container {
+	padding-bottom: 40px;
+}
+#main_content {
+	float: left;
+	clear: both;
+	margin-top: 10px;
+}
+#footer {
+	position: relative;
+	background: url("../images/foot.png") no-repeat top left;
+	height: 185px;
+	width: 660px;
+	margin-left: -330px;
+}
+#foot_container {
+	width: 100%;
+	height: 50px;
+	float: left;
+
+}
+#app_img {
+	width: 409px;
+	height: 752px;
+	background: url("../images/app_img_20.png");
+	float: left;
+	margin: 10px 0 0 0;
+}
+#info {
+	margin-bottom: 20px;
+}
+#docs_head {
+	margin: 20px 70px 0 80px;
+}
+
+#docs_head h2 {
+	margin: 10px 0;
+}
+#documentation_page.reference #docs_head h2 {
+	clear: both;
+	padding-top: 15px;
+}
+#backstory p {
+	margin-bottom: 20px;
+}
+/* @group docs menu */
+#docs_menu {
+	float: left;
+}
+/* @group submenu */
+
+#submenu {
+	float: left;
+	clear: both;
+	width: 360px;
+	margin: -10px 15px 10px 5px;
+	padding: 10px 10px 25px 10px;
+	background: url("../images/submenu.png") no-repeat bottom left;
+}
+#submenu ul {
+	list-style: none;
+}
+#submenu ul li a {
+	margin: 0 0px;
+	padding: 5px 15px 9px 15px;
+	display: block;
+	height: 30px;
+	font-size: 1.3em;
+	font-weight: bold;
+	border-bottom: 1px dotted #bbb;
+	cursor: pointer;
+}
+#submenu ul li a .fn {
+	padding-left: 2em;
+}
+
+/* @end */
+/* @group switch */
+
+#switch {
+	height: 50px;
+	width: 390px;
+	float: left;
+	position:relative;
+	z-index: 1;
+}
+#switch ul {
+	list-style: none;
+	float: left;
+}
+#switch ul li {
+	float: left;
+}
+#switch ul li a {
+	float: left;
+	display: block;
+	height: 100%;
+	line-height: 50px;
+	background: url("../images/switch.png");
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.3em;
+  width: 184px;
+}
+#switch ul li.btn_1 a {
+	padding-left: 10px;
+	background-position: top left;
+}
+/*#switch ul li.btn_2 a {*/
+	/*background-position: -90px top;*/
+	/*width: 139px;*/
+/*}*/
+#switch ul li.btn_3 a {
+	padding-right: 10px;
+	background-position: right top;
+  border-left: 1px solid #999;
+}
+#documentation_page.tutorials #switch ul li.btn_1 a {
+	background-position: bottom left;
+}
+/*#documentation_page.problems #switch ul li.btn_2 a {*/
+	/*background-position: -90px bottom;*/
+/*}*/
+#documentation_page.reference #switch ul li.btn_3 a {
+	background-position: right bottom;
+}
+#switch ul li a:link,
+#switch ul li a:visited {
+	color: #000;
+}
+#switch ul li a:hover,
+#switch ul li a:active {
+	color: #303;
+}
+
+
+
+/* @end */
+
+/* @end */
+/* @group branding */
+
+#branding h1 {
+	height: 0px;
+	overflow: hidden;
+}
+
+#branding img {
+	float: left;
+	padding-left: 20px;
+}
+#branding h2 {
+	float: left;
+	font-weight: normal;
+	position: absolute;
+	left: 50%;
+	top: 40px;
+	margin-left: -40px;
+}
+#branding {
+	float: left;
+	margin-top: 10px;
+}
+
+
+
+/* @end */
+
+/* @group main_nav */
+
+#main_nav {
+	margin-left: -150px;
+	position: relative;
+	left: 50%;
+	float: left;
+	clear: both;
+}
+
+#main_nav ul {
+	float: left;
+	list-style: none;
+	background: url("../images/tab_r.png") no-repeat bottom left;
+	padding-left: 25px;
+}
+#main_nav ul li {
+	float: left;
+	background: url("../images/tab_l.png") no-repeat top left;
+}
+#main_nav li a {
+	padding: 0 30px 0 30px;
+	display: block;
+	line-height: 40px;
+	background: url("../images/tab_r.png") no-repeat top right;
+	float: left;
+}
+
+#main_nav li a:hover {
+	background-position: bottom right;
+}
+#main_nav ul li:hover {
+	background-position: bottom left;
+}
+
+
+
+/* @end */
+
+/* @group about_page */
+
+#about_page #main_nav .about_tab,
+#documentation_page #main_nav .documentation_tab,
+#blog_page #main_nav .blog_tab,
+#contact_page #main_nav .contact_tab {
+	background-position: bottom left;
+}
+#about_page #main_nav .about_tab a,
+#documentation_page #main_nav .documentation_tab a,
+#blog_page #main_nav .blog_tab a,
+#contact_page #main_nav .contact_tab a {
+	background-position: bottom right;
+}
+
+
+
+/* @end */
+
+/* @group top and bottom of container */
+
+#head_left {
+	background: url("../images/top_l.png") repeat-x right top;
+	position: absolute;
+	width: 50%;
+	height: 40px;
+	left: 0;
+	top: 88px;
+	z-index: 0;
+}
+#head_right {
+	background: url("../images/top_r.png") repeat-x left top;
+	position: absolute;
+	width: 100%;
+	overflow: visible;
+	height: 40px;
+	left: 0;
+	top: 88px;
+	z-index: -1;
+}
+
+#foot_left {
+	height: 50px;
+	overflow: visible;
+	width: 50%;
+	position: absolute;
+	float: left;
+	z-index: -1;
+	clear: both;
+	background: url("../images/foot_l.png") repeat-x top right;
+}
+
+#foot_right {
+	height: 50px;
+	overflow: visible;
+	width: 100%;
+	position: absolute;
+	float: left;
+	z-index: -2;
+	clear: both;
+	background: url("../images/foot_r.png") repeat-x top right;
+}
+
+
+
+/* @end */
+
+/* @group content */
+
+#content {
+	width: 230px;
+	float: right;
+	margin: 60px 125px 10px 0;
+}
+#content p {
+	margin: 10px 0;
+}
+
+
+
+/* @end */
+
+/* @group footer */
+#footer h2 {
+	margin-bottom: 10px;
+}
+#footer p {
+	margin:10px 0;
+}
+#footer #copyright {
+	width: 370px;
+	padding: 94px 20px 22px 16px;
+	float: left;
+
+}
+
+#footer #extra_info {
+	width: 220px;
+	padding: 36px 10px 22px 20px;
+	float: left;
+}
+/* @end */
+/*Unsorted *************/
+
+#blog_content {
+	float: left;
+	width: 550px;
+}
+
+#blog_content p {
+
+	margin: 1em 0;
+}
+.post > *,
+.post {
+
+}
+.post {
+	padding: 14px;
+}
+.post.odd {
+	background-color: #ccc;
+}
+
+#sidebar ul,
+#blog_content ul {
+	padding-left: 1.4em;
+	font-size: 1.2em;
+}
+
+#blog_content img {
+	float: none;
+	clear: none;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+
+#blog_content div.post.odd p img {
+
+}
+#blog_page #sidebar h2 {
+	color: #eee;
+	font-size: 2em;
+	margin: 0 0 10px;
+}
+#blog_page #sidebar ul {
+	color: #eee;
+}
+#blog_page #sidebar ul li a {
+	color: #7ed4d2;
+}
+#blog_page #sidebar {
+	float: left;
+	width: 200px;
+	margin-left: 10px;
+	padding: 10px;
+	background-color: #444;
+}
+
+/***************************/
+#documentation_page.problems div#submenu {
+	margin-bottom: 40px;
+}
+#blog_page div#comments {
+	float: left;
+	clear: both;
+	margin-top: 200px;
+	display: none;
+}
+#blog_page div#comments p.comment-timestamp {
+
+	margin-top: -200px;
+}
+#documentation_page.tutorials #docs_head {
+	float: left;
+	clear: left;
+	width: 300px;
+	margin-top: 0;
+	margin-right: 0;
+}
+#player {
+	background: url("../images/app_img_20.png") no-repeat left top;
+	width: 409px;
+	height: 752px;
+	float: right;
+	clear: none;
+	position: relative;
+	margin-left: -50px;
+	left: 30px;
+}
+#player > object {
+	float: left;
+	position: relative;
+	left: 44px;
+	top: 156px;
+	z-index: 10;
+}
+
+#blog_page #backstory {
+	width: 640px;
+	position: relative;
+	left: 60px;
+}
+#blog_page #backstory h2 {
+	margin-bottom: 10px;
+}
+#blog_page div.paper h2,
+#blog_page div.backstory h2 {
+	color: #404;
+}
+#blog_page div.paper h2 {
+	font-size: 2.4em;
+}
+#blog_page h3.date-header,
+#blog_page p.post-footer {
+	color: #999;
+	font: normal 1.2em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+#blog_page div.paper p {
+	margin: 15px 0;
+	font-size: 1.3em;
+	color: #333;
+}
+#blog_page div.paper ul {
+	padding-left: 20px;
+	font-size: 1.2em;
+	color: #333;
+}
+
+
+#blog_page div.paper {
+	background: url("../images/paper_blog_body.png") repeat-y;
+	padding: 0px 30px 0px 30px;
+	margin: 20px 0;
+	float: left;
+	left: 50px;
+	width: 460px;
+	clear: none;
+	position: relative;
+	z-index: 2;
+}
+#blog_page div.paper div.top {
+	background: url("../images/paper_blog_top.png") no-repeat bottom left;
+	height: 20px;
+	float: left;
+	clear: both;
+	width: 600px;
+	position: absolute;
+	left: 0px;
+	top: -20px;
+}
+#blog_page div.paper div.bottom {
+	background: url("../images/paper_blog_btm.png") no-repeat top left;
+	height: 20px;
+	float: left;
+	clear: both;
+	width: 600px;
+	position: relative;
+	left: -30px;
+	top: 20px;
+}
+
+#blog_page div.paper p.post-footer {
+	margin-bottom: -20px;
+}
+
+#blog_page h3.date-header {
+	margin-top: 0px;
+}
+
+#contact_page img {
+	float: left;
+	clear: both;
+}
+#contact_page #main_content h2,
+#contact_page #main_content p {
+	position: relative;
+	left: 20px;
+	top: 50px;
+	padding-right: 20px;
+	padding-bottom: 12px;
+}
+#contact_page #main_content p {
+	font-size: 1.9em;
+}
+#contact_page #main_content {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+code {
+	font-weight: bold;
+	color: #333;
+	font-size: 1.4em;
+	margin: 0 10px;
+	position: relative;
+	width: 100%;
+
+}
+code.rkode {
+	font-size: 2em;
+	text-align: center;
+	width: 100%;
+	position: relative;
+	margin: 10px auto;
+	clear: both;
+	float: left;
+}
+
+img.tex {
+	display: inline;
+	vertical-align: text-bottom;
+}
+
+img.tall.tex {
+	display: block;
+	margin: 8px auto;
+}
+
+span.click_for_more {
+	float: right;
+	color: #888;
+	font-style: italic;
+	font-size: 1.3em;
+	vertical-align: baseline;
+}
+.fn_over {
+	cursor: pointer;
+	/*background-color: rgba(255,255,255,.5);*/
+	background: url("../images/white.png") repeat;
+}
+#steps {
+	float: left;
+	clear: both;
+	width: 790px;
+	position: relative;
+	left: 50%;
+	margin-left: -350px;
+}
+
+#steps p {
+	margin: 10px auto;
+}
+#steps img {
+	border: 0px solid black;
+	margin: 0 6px -20px 6px;
+
+}
+#steps div.f_00,
+#steps div.f_10,
+#steps div.f_11,
+#steps div.f_20 {
+	clear: both;
+}
+#steps div.f_10,
+#steps div.f_11,
+#steps div.f_12,
+#steps div.f_13 {
+	background: url("../images/paper_short_body.png") repeat-y;
+	float: left;
+	width: 290px;
+	padding: 0 20px 0 20px;
+	position: relative;
+	margin: 10px;
+}
+#steps div.f_10 div.top,
+#steps div.f_11 div.top,
+#steps div.f_12 div.top,
+#steps div.f_13 div.top {
+	background: url("../images/paper_short_top.png") no-repeat left bottom;
+	width: 330px;
+	height: 20px;
+	position: absolute;
+	top: -20px;
+	left: 0px;
+}
+#steps div.f_10 div.bottom,
+#steps div.f_11 div.bottom,
+#steps div.f_12 div.bottom,
+#steps div.f_13 div.bottom {
+		background: url("../images/paper_short_btm.png") no-repeat left top;
+	width: 330px;
+	height: 20px;
+	position: relative;
+	top: 20px;
+	left: -20px;
+}
+#steps div.f_00,
+#steps div.f_20 {
+	background: url("../images/paper_body.png") repeat-y;
+	float: left;
+	width: 600px;
+	padding: 0 20px 0 20px;
+	position: relative;
+	margin: 10px 10px 30px 10px;
+}
+#steps div.f_00 div.top,
+#steps div.f_20 div.top {
+	background: url("../images/paper_top.png") no-repeat left bottom;
+	height: 20px;
+	width: 640px;
+	position: absolute;
+	top: -20px;
+	left: 0px;
+}
+#steps div.f_00 div.bottom,
+#steps div.f_20 div.bottom {
+	background: url("../images/paper_btm.png") no-repeat left top;
+	height: 20px;
+	width: 640px;
+	position: relative;
+	top: 20px;
+	left: -20px;
+	margin-bottom: 15px;
+}
+
+
+
+#documentation_page.tutorials p.subtitle {
+	clear: both;
+	font-size: 1.9em;
+	width: 630px;
+	float: left;
+	position: relative;
+	left: 50%;
+	margin: 0px 0 20px -304px;
+
+}
+#documentation_page h2.odd {
+	padding-right: 304px;
+	width: 50%;
+	float: right;
+	clear: both;
+	padding-left: 44px;
+	position: relative;
+	display: block;
+	line-height: 60px;
+	color: #eee;
+	font-weight: normal;
+	background: url("../images/branch_1.png") no-repeat left top;
+	z-index: 2;
+}
+#documentation_page h2.even,
+#blog_page h2.even {
+	width: 50%;
+	float: left;
+	clear: both;
+	text-align: right;
+	padding-right: 480px;
+	margin-left: -120px;
+	position: relative;
+	display: block;
+	line-height: 90px;
+	color: #eee;
+	font-weight: normal;
+	background: url("../images/branch_2.png") no-repeat right top;
+	z-index: 2;
+	margin-bottom: -10px;
+}
+#documentation_page.problems div.paper p{
+	margin: 12px;
+}
+
+#documentation_page.problems div.paper table {
+	margin: 10px auto;
+	font-size: 1.2em;
+	color: #333;
+	width: 200px;
+}
+#documentation_page.problems div.paper table th {
+	font-size: 1.2em;
+}
+#documentation_page div.paper{
+	float: left;
+	clear: both;
+	position: relative;
+	left: 50%;
+	width: 627px;
+	margin: 0px 0px 40px -310px;
+	padding: 0px 5px 0 6px;
+	background: url("../images/paper_body.png") repeat-y left top;
+}
+#documentation_page div.paper > div.top {
+	float: left;
+	height: 20px;
+	width: 640px;
+	position: absolute;
+	top: -20px;
+	left: 0px;
+	margin: 0;
+	padding: 0;
+	background: url("../images/paper_top.png") no-repeat left bottom;
+}
+#documentation_page div.paper > div.bottom {
+	float: left;
+	height: 20px;
+	width: 640px;
+	position: relative;
+	left: -6px;
+	top: 20px;
+	z-index: 1;
+	background: url("../images/paper_btm.png") no-repeat left top;
+}
+#documentation_page.reference dl dt {
+	line-height: 21px;
+	border-top: 1px solid #bbb;
+	clear: both;
+	float: left;
+	width: 586px;
+	padding: 5px 20px;
+}
+#documentation_page.reference dl dt .fn_name {
+	float: left;
+	font-size: 2em;
+	color: #505;
+	vertical-align: baseline;
+}
+#documentation_page.reference dl dt .fn_types {
+	float: left;
+	font-style: italic;
+	font-size: 1.4em;
+	padding: 0 0.3em;
+	color: #666;
+	vertical-align: baseline;
+}
+#documentation_page.reference dl dt .fn_desc {
+	font-size: 1.3em;
+	padding-left: .2em;
+	vertical-align: baseline;
+	float: left;
+}
+#documentation_page.reference dl dd {
+	float: left;
+	clear: both;
+	width: 585px;
+	padding: 0px 20px;
+}
+#documentation_page.reference dl dd div.more {
+	background: url("../images/more_body.png") repeat-y center top;
+	width: 585px;
+	position: relative;
+	float: left;
+	clear: both;
+	margin: 20px 0 30px 0;
+}
+#documentation_page.reference dl dd div.more > div.top {
+	background: url("../images/more_top.png") no-repeat center top;
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	top: -20px;
+	padding-top: 0px;
+	left: 0px;
+}
+#documentation_page.reference dl dd div.more > div.bottom {
+	background: url("../images/more_btm.png") no-repeat center bottom;
+	padding-bottom: 0px;
+	width: 100%;
+	height: 20px;
+	position: relative;
+	top: 20px;
+
+}
+#documentation_page.reference dl {
+	width: auto;
+	/*background-color: rgba(173,153,173,.25);*/
+	background: url("../images/pink.png") repeat;
+	float: left;
+	border-bottom: 1px solid #bbb;
+}
+
+#documentation_page.reference dl dd p {
+	position: relative;
+	padding: 0 20px;
+	margin: -10px 0 -30px 0;
+	z-index: 1;
+}
